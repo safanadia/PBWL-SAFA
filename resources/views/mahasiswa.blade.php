@@ -37,6 +37,44 @@
 
       <div class="container" style="margin-left: 20px">
         <h1>Ini Adalah Halaman Mahasiswa</h1>
+
+        {{--
+        ROWSPAN = Untuk menghubungkan baris
+        COLSPAN = Untuk menghubungkan kolom
+        --}}
+
+        <table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
+          <thead>
+            <tr>
+              <th>NIM</th>
+              <th>Nama Mahasiswa</th>
+              <th>Jenis Kelamin</th>
+              <th colspan="2">TTL</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12398766</td>
+                <td>Safa Nadia Bakri</td>
+                <td>Perempuan</td>
+                <td>02 April 2004</td>
+                <td rowspan="3">Kota Medan</td>
+              </tr>
+              <tr>
+                <td>12383733</td>
+                <td>Fahri Ramadhan</td>
+                <td>Laki-Laki</td>
+                <td>11 November 2004</td>
+              </tr>
+              <tr>
+                <td>18272653</td>
+                <td>Aulia Ramadhani</td>
+                <td>Perempuan</td>
+                <td>3 Mei 2004</td>
+              </tr>
+
+          </tbody>
+        </table>
       </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
